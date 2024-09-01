@@ -6,10 +6,12 @@
 body {
 	background-color: #004c4c;
 }
-html{
+
+html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 80px;
 }
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -19,9 +21,9 @@ html{
 
 .navbar {
 	background-color: #008080;
-	width: 40%;
+	width: 60%;
 	border: 2px solid black;
-	border-radius: 25px;
+	border-radius: 15px;
 	z-index: 1000;
 	margin-bottom: 30px;
 	position: sticky;
@@ -50,7 +52,8 @@ html{
 	margin: 0;
 
 }
-.navList a{
+
+.navList a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -103,6 +106,7 @@ html{
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	font-weight: 400;
 	text-align: justify;
+	margin-bottom: 30px;
 }
 
 .myBtn {
@@ -181,7 +185,7 @@ p {
 	font-size: 28px;
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	font-weight: 300;
-	color: #D1D9E0;
+	color: cyan;
 
 }
 
@@ -191,7 +195,8 @@ p {
 	font-weight: 400;
 	color: #D1D9E0;
 }
-.eduTimeline{
+
+.eduTimeline {
 	font-size: 14px;
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	font-weight: 400;
@@ -306,10 +311,11 @@ p {
 
 
 @media screen and (max-width: 1600px) {
-	.contactBox{
+	.contactBox {
 		flex-direction: column;
 		gap: 20px;
 	}
+
 	.contactCard {
 		width: 40%;
 	}
@@ -317,118 +323,178 @@ p {
 
 @media screen and (max-width: 1168px) {
 	.navbar {
-		width: 60%;
+		width: 90%;
+		border-radius: 12px;
 	}
 
-	.aboutTxt{
+	.navList {
+		font-size: 16px;
+		justify-content: space-around;
+		align-items: center;
+		gap: 12px;
+		padding: 4px 12px;
+
+	}
+	.homeContainer{
 		width: 90%;
 	}
+	.aboutTxt {
+		width: 100%;
+	}
+
 	.eduCard {
 		width: 100%;
 	}
-	
+
 	.eduInfo h2 {
 		font-size: 18px;
 		text-align: center;
 		width: 100%;
 	}
+
 	.eduInfo p {
 		font-size: 15px;
 		text-align: center;
 		width: 100%;
 	}
+
 	.contactCard {
 		width: 40%;
 	}
-	.footer p{
+
+	.footer p {
 		font-size: 10px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.navbar {
-		width: 80%;
+		width: 95%;
+		border-radius: 12px;
+	}
+
+	.navList {
+		font-size: 14px;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10px;
+		padding: 4px 12px;
+
+	}
+	.homeContainer{
+		width: 95%;
 	}
 	.myName {
 		font-size: 28px;
 	}
+
 	.aboutTxt {
-		width: 90%;
+		width: 100%;
 	}
+
 	.eduCard {
 		width: 100%;
 	}
+
 	.eduInfo h2 {
 		font-size: 18px;
 		text-align: center;
 		width: 100%;
 	}
+
 	.eduInfo p {
 		font-size: 15px;
 		text-align: center;
 		width: 100%;
 	}
-	.skillIcon{
+
+	.skillIcon {
 		height: 100px;
 		width: 100px;
 	}
+
 	.contactCard {
 		width: 60%;
 	}
-	.footer p{
+
+	.footer p {
 		font-size: 10px;
 	}
 }
 
 @media screen and (max-width: 630px) {
 	.navbar {
-		width: 90%;
+		width: 95%;
+		border-radius: 12px;
 	}
 
+	.navList {
+		font-size: 14px;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10px;
+		padding: 4px 12px;
+
+	}
+	.homeContainer{
+		width: 95%;
+	}
 	.aboutTxt {
 		width: 95%;
-		font-size: 16px;
+		font-size: 18px;
+
+	}
+	.eduContainer{
+		width: 95%;
 	}
 	.eduCard {
 		width: 100%;
 	}
+
 	.eduInfo h2 {
 		font-size: 18px;
 		text-align: center;
 		width: 100%;
 	}
+
 	.eduInfo p {
 		font-size: 15px;
 		text-align: center;
 		width: 100%;
 	}
-	.skillIcon{
+
+	.skillIcon {
 		height: 90px;
 		width: 90px;
 	}
-	.projectContainer .secTitle{
+
+	.projectContainer .secTitle {
 		font-size: 24px;
 	}
-	.footer p{
+
+	.footer p {
 		font-size: 9px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.navbar {
-		width: 70%;
-
+		width: 95%;
+		border-radius: 12px;
 	}
 
 	.navList {
+		font-size: 14px;
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 20px;
 		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+
+		gap: 10px;
+		padding: 4px 12px;
 
 	}
-
+	
 	.displayPic {
 		height: 180px;
 		width: 180px;
@@ -438,35 +504,117 @@ p {
 	.myName {
 		font-size: 16px;
 	}
-
+	.homeContainer{
+		width: 95%;
+	}
 	.aboutTxt {
-		width: 80%;
+		width: 100%;
 		font-size: 18px;
 
+	}
+	.eduContainer{
+		width: 95%;
 	}
 	.eduCard {
 		width: 100%;
 	}
+
 	.eduInfo h2 {
 		font-size: 18px;
 		text-align: center;
 		width: 100%;
 	}
+
 	.eduInfo p {
 		font-size: 15px;
 		text-align: center;
 		width: 100%;
 	}
-	.skillIcon{
+
+	.skillIcon {
 		height: 60px;
 		width: 60px;
 	}
+
+	.projectContainer .secTitle {
+		text-align: center;
+	}
+
 	.contactCard {
 		width: 70%;
 	}
-	
-	.footer p{
+
+	.footer p {
 		font-size: 9px;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 430px) {
+
+	.navbar {
+		width: 100%;
+		border-radius: 5px;
+	}
+
+	.navList {
+		font-size: 12px;
+		display: flex;
+		justify-content: space-around;
+		gap: 0;
+		padding: 4px 12px;
+
+	}
+
+	.homeContainer {
+		width: 90%;
+	}
+
+	.aboutTxt {
+		width: 100%;
+	}
+
+	.eduContainer {
+		width: 90%;
+	}
+
+	.eduInfo h2 {
+		font-size: 18px;
+
+	}
+
+	.skillContainer {
+		width: 95%;
+	}
+
+	.skillShowcase {
+		gap: 10px;
+	}
+
+	.projectContainer {
+		width: 90%;
+	}
+
+	.projectContainer .secTitle {
+		text-align: center;
+	}
+
+	.contactContainer {
+		width: 90%;
+	}
+
+	.contactCard {
+		width: 100%;
+	}
+
+	.contactCard p {
+		text-align: center;
+	}
+
+	.footer {
+		width: 100%;
+		text-align: center;
 	}
 
 }
