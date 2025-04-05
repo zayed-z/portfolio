@@ -3,6 +3,10 @@
 	src: url('./fonts/Poppins-Medium.ttf');
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #004c4c;
 }

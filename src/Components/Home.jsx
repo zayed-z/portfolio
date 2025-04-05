@@ -13,7 +13,7 @@ function Home() {
 			</p>
 			<div className='myBtn'>
 
-				<a href="https://drive.google.com/file/d/1bQyKfo_FpY2M3qINRX6KxZWgVTUinZKM/view?usp=drive_link" target='_blank'><button className='Btn'>My RESUME</button></a>
+				<a href="https://drive.google.com/file/d/1bp1ESUXqIR3gaiIfhi9lvY_b5zdzAEuf/view" target='_blank'><button className='Btn'>My RESUME</button></a>
 				<a href="https://github.com/zayed-z" target='_blank'><button className='Btn'>My GITHUB</button></a>
 
 
